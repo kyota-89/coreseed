@@ -984,6 +984,11 @@ p{ margin:0; }
   width:100%; height:100%; object-fit:cover; display:block;
   background: var(--navy-950);
 }
+.reel-media img{
+  width:100%; height:100%; object-fit:cover; display:block;
+  background: var(--navy-950);
+}
+.reel-media--photo{ aspect-ratio: 4/5; }
 .reel-caption{
   margin-top:10px;
   font-family:"Noto Serif JP",serif;
@@ -1319,11 +1324,33 @@ p{ margin:0; }
           </div>
         </div>
       </div>
-      <div class="result-card reveal reveal-d1">
+      <div class="result-card reveal reveal-d1 result-card--featured">
         <div class="result-label">オンライン×ウェルネス</div>
         <div class="tag-row">
           <span class="result-tag">全国対応</span>
-          <span class="result-tag">法人の福利厚生</span>
+        </div>
+        <div class="reel-section">
+          <div class="reel-head">
+            <h3>オンラインセッションの様子</h3>
+            <div class="reel-nav">
+              <button type="button" class="reel-btn reel-prev" aria-label="前の写真">&lsaquo;</button>
+              <button type="button" class="reel-btn reel-next" aria-label="次の写真">&rsaquo;</button>
+            </div>
+          </div>
+          <div class="reel-wrap">
+            <div class="reel-card">
+              <div class="reel-media reel-media--photo">
+                <img src="photos/online-1.jpg" alt="オンラインセッションの様子">
+              </div>
+              <div class="reel-caption">M.Gさん</div>
+            </div>
+            <div class="reel-card">
+              <div class="reel-media reel-media--photo">
+                <img src="photos/online-2.jpg" alt="オンラインセッションの様子">
+              </div>
+              <div class="reel-caption">S.Yさん</div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="result-card reveal reveal-d2">
