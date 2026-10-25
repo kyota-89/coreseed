@@ -998,8 +998,43 @@ p{ margin:0; }
   text-align:center;
 }
 .reel-caption-cat{ color: var(--gold); }
+.voice-label{
+  margin-top:32px;
+  margin-bottom:14px;
+  font-family:"Noto Serif JP",serif;
+  font-size:15.5px;
+  letter-spacing:.03em;
+}
+.voice-label::before{
+  content:"\2014\0020";
+  color: var(--gold);
+}
+.voice-list{
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
+.voice-item{
+  background: var(--white);
+  border:1px solid var(--line-dark);
+  border-left:3px solid var(--gold);
+  padding:22px 26px;
+}
+.voice-name{
+  font-family:"Noto Serif JP",serif;
+  font-size:14px;
+  color: var(--ink);
+  margin-bottom:10px;
+}
+.voice-text{
+  font-size:13.5px;
+  line-height:1.95;
+  color: var(--ink-soft);
+  white-space:pre-line;
+}
 @media (max-width:560px){
   .reel-wrap{ gap:14px; }
+  .voice-item{ padding:18px 20px; }
 }
 
 /* ==========================================================================
@@ -1307,7 +1342,7 @@ p{ margin:0; }
               <div class="reel-media">
                 <video src="videos/pt-reel-2.mp4" poster="videos/pt-reel-2.jpg" controls playsinline preload="metadata"></video>
               </div>
-              <div class="reel-caption"><span class="reel-caption-cat">経営者</span> / L.Kさん</div>
+              <div class="reel-caption"><span class="reel-caption-cat">経営者</span> / R.Kさん</div>
             </div>
             <div class="reel-card">
               <div class="reel-media">
@@ -1349,6 +1384,18 @@ p{ margin:0; }
                 <img src="photos/online-2.jpg" alt="オンラインセッションの様子">
               </div>
               <div class="reel-caption">S.Yさん</div>
+            </div>
+          </div>
+          <div class="voice-label">お客様の声</div>
+          <div class="voice-list">
+            <div class="voice-item">
+              <div class="voice-name">M.Gさん</div>
+              <div class="voice-text">少しずつですが、メンタルが安定してきたと感じています！
+早起きや瞑想が習慣になり、以前のように時間がないことを言い訳にしなくなりました。
+仕事面でもパフォーマンスが向上していると感じています！
+実際に、月の半分時点までで成約率100％を達成し、生徒も新たに2名獲得できました！
+さらに、新しいオンラインコミュニティの開設や、初めて編集者さんと一緒に動画制作にも挑戦するなど、行動の幅も広がっています。
+まだまだ変化の途中ですが、これから自分がどう成長していくのか楽しみです！</div>
             </div>
           </div>
         </div>
