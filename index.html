@@ -6,34 +6,34 @@
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="apple-touch-icon" href="favicon.png">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="CoreSeedは元甲子園球児・田口恭大が代表を務める、パーソナルトレーニング／オンラインウェルネス／人材・組織開発／野球教室の4事業を展開する個人事業です。">
+<meta name="description" content="CoreSeedは田口恭大が代表を務める、高齢者デイ×ジム／パーソナルトレーニング／オンラインウェルネス／オンラインフィットネスの4事業を展開する個人事業です。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;700&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Yomogi&family=Zen+Maru+Gothic:wght@400;500;700;900&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
 /* ==========================================================================
    CoreSeed — Site Stylesheet
    ========================================================================== */
 
 :root{
-  --navy-950:#0a0e17;
-  --navy-900:#0d1420;
-  --navy-800:#131c2c;
-  --navy-700:#1b2740;
-  --navy-600:#26365a;
-  --cream:#f6f2e8;
-  --cream-2:#efe9da;
-  --paper:#fbf9f4;
+  --navy-950:#2b2015;
+  --navy-900:#372a1b;
+  --navy-800:#453522;
+  --navy-700:#5c4730;
+  --navy-600:#77603f;
+  --cream:#f7f1e3;
+  --cream-2:#efe4cf;
+  --paper:#fbf6ec;
   --white:#ffffff;
-  --gold:#b8935a;
-  --gold-light:#d4b483;
-  --teal:#4fa69d;
-  --teal-light:#7fc4bc;
-  --ink:#161c28;
-  --ink-soft:#4a5568;
-  --line:rgba(255,255,255,0.12);
-  --line-dark:rgba(20,26,40,0.10);
-  --shadow-1: 0 20px 60px rgba(10,14,23,0.14);
-  --shadow-2: 0 10px 30px rgba(10,14,23,0.10);
+  --gold:#c1694a;
+  --gold-light:#d99470;
+  --teal:#7fa06b;
+  --teal-light:#a8c398;
+  --ink:#4a3c30;
+  --ink-soft:#7d6b57;
+  --line:rgba(255,255,255,0.14);
+  --line-dark:rgba(74,60,48,0.10);
+  --shadow-1: 0 20px 60px rgba(60,40,20,0.14);
+  --shadow-2: 0 10px 30px rgba(60,40,20,0.10);
   --ease: cubic-bezier(.16,.8,.24,1);
   --maxw: 1180px;
 }
@@ -42,7 +42,7 @@
 html{ scroll-behavior: smooth; }
 body{
   margin:0;
-  font-family: "Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;
+  font-family: "Zen Maru Gothic","Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;
   color: var(--ink);
   background: var(--paper);
   -webkit-font-smoothing: antialiased;
@@ -55,7 +55,7 @@ a{ color:inherit; text-decoration:none; }
 ul{ margin:0; padding:0; list-style:none; }
 h1,h2,h3,h4{ margin:0; font-weight:700; }
 p{ margin:0; }
-.serif{ font-family:"Noto Serif JP", serif; }
+.serif{ font-family:"Zen Maru Gothic","Noto Serif JP", serif; }
 
 .container{
   max-width: var(--maxw);
@@ -68,18 +68,19 @@ p{ margin:0; }
   display:inline-flex;
   align-items:center;
   gap:10px;
-  font-family:"DM Serif Display", serif;
-  font-size:13px;
-  letter-spacing:.28em;
-  text-transform:uppercase;
+  font-family:"Yomogi","Noto Sans JP",sans-serif;
+  font-size:16px;
+  letter-spacing:.06em;
   color: var(--teal);
   font-weight:600;
 }
 .eyebrow::before{
   content:"";
-  width:26px;
-  height:1px;
-  background: var(--gold);
+  width:30px;
+  height:8px;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 8'><path d='M1,4 Q5,0.5 9,4 T17,4 T25,4 T33,4' stroke='%23c1694a' stroke-width='1.8' fill='none' stroke-linecap='round'/></svg>");
+  background-repeat:no-repeat;
+  background-size:contain;
   display:inline-block;
 }
 .section{ padding: 120px 0; position:relative; }
@@ -104,14 +105,14 @@ p{ margin:0; }
   font-size:15.5px;
   color: var(--ink-soft);
 }
-.on-dark .section-head .lead{ color: rgba(246,242,232,0.72); }
+.on-dark .section-head .lead{ color: rgba(247,241,227,0.72); }
 
 .btn{
   display:inline-flex;
   align-items:center;
   gap:12px;
   padding: 16px 34px;
-  border-radius: 2px;
+  border-radius: 999px;
   font-size:14px;
   letter-spacing:.12em;
   font-weight:600;
@@ -126,12 +127,12 @@ p{ margin:0; }
 }
 .btn-gold:hover{ background: linear-gradient(135deg,#c8a06a,#b08a52); transform: translateY(-2px); box-shadow: var(--shadow-2); }
 .btn-outline{
-  border-color: rgba(246,242,232,0.4);
+  border-color: rgba(247,241,227,0.4);
   color: var(--cream);
 }
 .btn-outline:hover{ border-color: var(--gold); color: var(--gold-light); transform: translateY(-2px); }
 .btn-outline-dark{
-  border-color: rgba(22,28,40,0.25);
+  border-color: rgba(74,60,48,0.25);
   color: var(--ink);
 }
 .btn-outline-dark:hover{ border-color: var(--navy-900); background: var(--navy-900); color: var(--cream); transform: translateY(-2px); }
@@ -163,21 +164,21 @@ p{ margin:0; }
 }
 .site-header.scrolled{
   padding: 14px 0;
-  background: rgba(10,14,23,0.86);
+  background: rgba(43,32,21,0.86);
   backdrop-filter: blur(14px);
   box-shadow: 0 1px 0 rgba(255,255,255,0.06);
 }
 .brand{ display:flex; align-items:center; gap:12px; }
 .brand img{ height:38px; width:auto; transition: height .4s var(--ease); }
 .site-header.scrolled .brand img{ height:32px; }
-.brand-word{ font-family:"Noto Serif JP",serif; font-size:20px; letter-spacing:.06em; color: var(--cream); }
+.brand-word{ font-family:"Zen Maru Gothic","Noto Serif JP",serif; font-size:20px; letter-spacing:.06em; color: var(--cream); }
 .brand-word b{ color: var(--gold-light); font-weight:700; }
 
 .main-nav{ display:flex; align-items:center; gap:44px; }
 .main-nav a{
   font-size:13.5px;
   letter-spacing:.06em;
-  color: rgba(246,242,232,0.85);
+  color: rgba(247,241,227,0.85);
   position:relative;
   padding: 6px 0;
 }
@@ -195,7 +196,7 @@ p{ margin:0; }
 .nav-caret{
   display:inline-flex; align-items:center; justify-content:center;
   width:22px; height:22px; margin-left:2px;
-  color: rgba(246,242,232,0.6);
+  color: rgba(247,241,227,0.6);
   cursor:pointer;
   transition: transform .3s var(--ease), color .3s var(--ease);
 }
@@ -210,6 +211,8 @@ p{ margin:0; }
   margin-top:18px;
   background: var(--paper);
   border:1px solid var(--line-dark);
+  border-radius:14px;
+  overflow:hidden;
   box-shadow: var(--shadow-2);
   opacity:0; visibility:hidden; pointer-events:none;
   transition: opacity .25s var(--ease), transform .25s var(--ease), visibility .25s;
@@ -236,7 +239,7 @@ p{ margin:0; }
   display:none;
   width:40px; height:40px;
   border:1px solid var(--line);
-  border-radius:2px;
+  border-radius:12px;
   background:transparent;
   cursor:pointer;
   position:relative;
@@ -269,8 +272,8 @@ p{ margin:0; }
   content:"";
   position:absolute; inset:0;
   background-image:
-    linear-gradient(rgba(184,147,90,0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(184,147,90,0.05) 1px, transparent 1px);
+    linear-gradient(rgba(193,105,74,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(193,105,74,0.05) 1px, transparent 1px);
   background-size: 64px 64px;
   mask-image: linear-gradient(to bottom, rgba(0,0,0,0.9), transparent 80%);
   pointer-events:none;
@@ -285,7 +288,7 @@ p{ margin:0; }
 }
 .hero-copy .eyebrow{ margin-bottom: 26px; }
 .hero-copy h1{
-  font-family:"Noto Serif JP",serif;
+  font-family:"Zen Maru Gothic","Noto Serif JP",serif;
   font-size: clamp(34px, 4.6vw, 58px);
   line-height:1.55;
   letter-spacing:.02em;
@@ -301,7 +304,7 @@ p{ margin:0; }
 .hero-copy .sub{
   margin-top: 28px;
   font-size:15.5px;
-  color: rgba(246,242,232,0.72);
+  color: rgba(247,241,227,0.72);
   max-width: 520px;
 }
 .hero-actions{ margin-top: 44px; display:flex; gap:18px; flex-wrap:wrap; }
@@ -315,7 +318,7 @@ p{ margin:0; }
 .hero-stats div b,
 .hero-stats a b{
   display:block;
-  font-family:"Noto Serif JP",serif;
+  font-family:"Zen Maru Gothic","Noto Serif JP",serif;
   font-size: 30px;
   color: var(--gold-light);
 }
@@ -323,7 +326,7 @@ p{ margin:0; }
 .hero-stats a span{
   font-size:12px;
   letter-spacing:.06em;
-  color: rgba(246,242,232,0.6);
+  color: rgba(247,241,227,0.6);
 }
 .hero-stats a{
   text-decoration:none;
@@ -351,13 +354,13 @@ p{ margin:0; }
   right: 6%;
   top: 6%;
   border-radius:50%;
-  background: radial-gradient(circle, rgba(184,147,90,0.22), transparent 70%);
+  background: radial-gradient(circle, rgba(193,105,74,0.22), transparent 70%);
   filter: blur(6px);
 }
 .hero-portrait .ring{
   position:absolute;
   width: 360px; height:360px;
-  border:1px solid rgba(184,147,90,0.35);
+  border:1px solid rgba(193,105,74,0.35);
   border-radius:50%;
   top: 10%;
   right: 12%;
@@ -373,19 +376,20 @@ p{ margin:0; }
   position:absolute;
   left: 4%;
   bottom: 10%;
-  background: rgba(13,20,32,0.72);
+  background: rgba(55,42,27,0.72);
   backdrop-filter: blur(10px);
   border:1px solid var(--line);
+  border-radius:16px;
   padding: 16px 22px;
   max-width: 230px;
 }
-.hero-portrait .tag p{ font-size:11.5px; letter-spacing:.04em; color: rgba(246,242,232,0.85); }
-.hero-portrait .tag b{ display:block; color: var(--gold-light); font-family:"Noto Serif JP",serif; font-size:15px; margin-bottom:6px; }
+.hero-portrait .tag p{ font-size:11.5px; letter-spacing:.04em; color: rgba(247,241,227,0.85); }
+.hero-portrait .tag b{ display:block; color: var(--gold-light); font-family:"Zen Maru Gothic","Noto Serif JP",serif; font-size:15px; margin-bottom:6px; }
 
 .scroll-cue{
   position:absolute; left:50%; bottom:36px; transform:translateX(-50%);
   display:flex; flex-direction:column; align-items:center; gap:10px;
-  color: rgba(246,242,232,0.55);
+  color: rgba(247,241,227,0.55);
   font-size:10.5px; letter-spacing:.2em;
   z-index:2;
 }
@@ -406,17 +410,17 @@ p{ margin:0; }
   content:"";
   position:absolute; right:-10%; top:-20%;
   width:520px; height:520px;
-  background: radial-gradient(circle, rgba(184,147,90,0.14), transparent 70%);
+  background: radial-gradient(circle, rgba(193,105,74,0.14), transparent 70%);
 }
-.breadcrumb{ font-size:12px; letter-spacing:.08em; color: rgba(246,242,232,0.5); margin-bottom:22px; }
+.breadcrumb{ font-size:12px; letter-spacing:.08em; color: rgba(247,241,227,0.5); margin-bottom:22px; }
 .breadcrumb a:hover{ color: var(--gold-light); }
 .page-hero h1{
-  font-family:"Noto Serif JP",serif;
+  font-family:"Zen Maru Gothic","Noto Serif JP",serif;
   font-size: clamp(30px,4vw,48px);
   letter-spacing:.03em;
   line-height:1.5;
 }
-.page-hero .sub{ margin-top:22px; max-width:600px; color: rgba(246,242,232,0.72); font-size:15px; }
+.page-hero .sub{ margin-top:22px; max-width:600px; color: rgba(247,241,227,0.72); font-size:15px; }
 
 /* ==========================================================================
    Mission strip
@@ -432,7 +436,7 @@ p{ margin:0; }
 }
 .mission .eyebrow{ justify-content:center; }
 .mission h2{
-  font-family:"Noto Serif JP",serif;
+  font-family:"Zen Maru Gothic","Noto Serif JP",serif;
   font-size: clamp(22px,3vw,34px);
   line-height:1.9;
   margin-top:26px;
@@ -452,7 +456,7 @@ p{ margin:0; }
 }
 .lead-block .dots{ color: var(--teal); letter-spacing:.5em; font-size:12px; margin-bottom:26px; }
 .lead-block h2{
-  font-family:"Noto Serif JP",serif;
+  font-family:"Zen Maru Gothic","Noto Serif JP",serif;
   font-size: clamp(22px,3.2vw,36px);
   line-height:1.75;
   max-width: 760px;
@@ -483,13 +487,15 @@ p{ margin:0; }
 .biz-card{
   background: var(--white);
   border:1px solid var(--line-dark);
+  border-radius:22px;
+  overflow:hidden;
   padding: 40px 38px;
   position:relative;
   transition: transform .5s var(--ease), box-shadow .5s var(--ease), border-color .5s var(--ease);
 }
 .biz-card:hover{ transform: translateY(-6px); box-shadow: var(--shadow-1); border-color: transparent; }
 .biz-card .num{
-  font-family:"Noto Serif JP",serif;
+  font-family:"Zen Maru Gothic","Noto Serif JP",serif;
   font-size: 44px;
   color: var(--cream-2);
   -webkit-text-stroke: 1px var(--gold);
@@ -529,7 +535,7 @@ p{ margin:0; }
 .biz-detail:last-child{ border-bottom:none; }
 .biz-detail .num-col{ position:relative; }
 .biz-detail .num-col .num{
-  font-family:"Noto Serif JP",serif;
+  font-family:"Zen Maru Gothic","Noto Serif JP",serif;
   font-size: 74px;
   line-height:1;
   color: transparent;
@@ -547,7 +553,7 @@ p{ margin:0; }
 .biz-detail h3{
   font-size: 24px;
   letter-spacing:.03em;
-  font-family:"Noto Serif JP",serif;
+  font-family:"Zen Maru Gothic","Noto Serif JP",serif;
 }
 .biz-detail .desc{ margin-top:18px; font-size:14.5px; color: var(--ink-soft); max-width:660px; }
 .biz-detail .meta{
@@ -597,9 +603,10 @@ p{ margin:0; }
   padding: 26px 28px;
   background: var(--cream);
   border-left: 3px solid var(--gold);
+  border-radius:14px;
 }
 .about-pullquote p{
-  font-family:"Noto Serif JP",serif;
+  font-family:"Zen Maru Gothic","Noto Serif JP",serif;
   font-size:15.5px;
   line-height:1.9;
   color: var(--ink);
@@ -616,13 +623,13 @@ p{ margin:0; }
 }
 .about-photo-caption{
   position:absolute; left:0; right:0; bottom:0;
-  background: rgba(251,249,244,0.92);
+  background: rgba(251,246,236,0.92);
   backdrop-filter: blur(6px);
   padding: 20px 26px;
 }
 .about-photo-caption b{
   display:block;
-  font-family:"Noto Serif JP",serif;
+  font-family:"Zen Maru Gothic","Noto Serif JP",serif;
   font-size:17px;
   color: var(--ink);
 }
@@ -636,7 +643,7 @@ p{ margin:0; }
 .profile-name{ margin-top:8px; }
 .profile-name .kana{ font-size:12px; letter-spacing:.2em; color: var(--teal); }
 .profile-name h1{
-  font-family:"Noto Serif JP",serif;
+  font-family:"Zen Maru Gothic","Noto Serif JP",serif;
   font-size: clamp(28px,3.4vw,40px);
   margin-top:8px;
 }
@@ -665,18 +672,20 @@ p{ margin:0; }
   padding: 30px 28px;
   background: var(--white);
   border-left: 2px solid var(--gold);
+  border-radius:14px;
 }
-.value-card h4{ font-size:16.5px; font-family:"Noto Serif JP",serif; }
+.value-card h4{ font-size:16.5px; font-family:"Zen Maru Gothic","Noto Serif JP",serif; }
 .value-card p{ margin-top:12px; font-size:13.5px; color: var(--ink-soft); }
 
 .quote-block{
   background: var(--navy-950);
   color: var(--cream);
   padding: 70px 64px;
+  border-radius:20px;
   position: relative;
 }
-.quote-block .mark{ font-family:"Noto Serif JP",serif; font-size:64px; color: var(--gold); line-height:0; position:relative; top:30px; }
-.quote-block p{ font-size:14.5px; line-height:2.1; color: rgba(246,242,232,0.85); }
+.quote-block .mark{ font-family:"Zen Maru Gothic","Noto Serif JP",serif; font-size:64px; color: var(--gold); line-height:0; position:relative; top:30px; }
+.quote-block p{ font-size:14.5px; line-height:2.1; color: rgba(247,241,227,0.85); }
 .quote-block p + p{ margin-top:18px; }
 
 /* ==========================================================================
@@ -705,9 +714,9 @@ p{ margin:0; }
   background: var(--navy-900);
   color: var(--gold-light);
   display:flex; flex-direction:column; align-items:center; justify-content:center;
-  font-family:"Noto Serif JP",serif;
+  font-family:"Zen Maru Gothic","Noto Serif JP",serif;
 }
-.step-num span{ font-size:11px; letter-spacing:.14em; color: rgba(246,242,232,0.55); }
+.step-num span{ font-size:11px; letter-spacing:.14em; color: rgba(247,241,227,0.55); }
 .step-num b{ font-size:26px; margin-top:2px; }
 .step-body{ padding-top:14px; }
 .step-body h4{ font-size:17.5px; letter-spacing:.02em; }
@@ -726,7 +735,7 @@ p{ margin:0; }
   border-bottom: 1px solid var(--line-dark);
 }
 .trust-strip div{ text-align:center; flex:1; min-width: 150px; }
-.trust-strip b{ display:block; font-family:"Noto Serif JP",serif; font-size:30px; color: var(--navy-900); }
+.trust-strip b{ display:block; font-family:"Zen Maru Gothic","Noto Serif JP",serif; font-size:30px; color: var(--navy-900); }
 .trust-strip span{ font-size:11.5px; letter-spacing:.05em; color: var(--ink-soft); }
 
 /* ==========================================================================
@@ -743,11 +752,11 @@ p{ margin:0; }
 .cta-band::before{
   content:"";
   position:absolute; inset:0;
-  background: radial-gradient(circle at 20% 30%, rgba(184,147,90,0.14), transparent 55%), radial-gradient(circle at 80% 80%, rgba(79,166,157,0.14), transparent 55%);
+  background: radial-gradient(circle at 20% 30%, rgba(193,105,74,0.14), transparent 55%), radial-gradient(circle at 80% 80%, rgba(127,160,107,0.14), transparent 55%);
 }
 .cta-band .inner{ position:relative; z-index:1; }
-.cta-band h2{ font-family:"Noto Serif JP",serif; font-size: clamp(24px,3.2vw,38px); letter-spacing:.03em; }
-.cta-band p{ margin-top:18px; color: rgba(246,242,232,0.7); font-size:14.5px; }
+.cta-band h2{ font-family:"Zen Maru Gothic","Noto Serif JP",serif; font-size: clamp(24px,3.2vw,38px); letter-spacing:.03em; }
+.cta-band p{ margin-top:18px; color: rgba(247,241,227,0.7); font-size:14.5px; }
 .cta-band .actions{ margin-top:38px; display:flex; gap:18px; justify-content:center; flex-wrap:wrap; }
 
 /* ==========================================================================
@@ -762,9 +771,10 @@ p{ margin:0; }
   background: var(--navy-950);
   color: var(--cream);
   padding: 48px 44px;
+  border-radius:20px;
   height: fit-content;
 }
-.contact-info-card h3{ font-family:"Noto Serif JP",serif; font-size:22px; }
+.contact-info-card h3{ font-family:"Zen Maru Gothic","Noto Serif JP",serif; font-size:22px; }
 .contact-info-card .row{
   display:flex; gap:16px; align-items:flex-start;
   padding: 20px 0;
@@ -772,17 +782,18 @@ p{ margin:0; }
 }
 .contact-info-card .row .ico{ color: var(--gold-light); font-size:12px; letter-spacing:.08em; width:64px; flex-shrink:0; padding-top:2px; }
 .contact-info-card .row .val{ font-size:15px; }
-.contact-info-card .row .val small{ display:block; margin-top:4px; font-size:12px; color: rgba(246,242,232,0.55); }
+.contact-info-card .row .val small{ display:block; margin-top:4px; font-size:12px; color: rgba(247,241,227,0.55); }
 .contact-info-card .qr{ margin-top:28px; padding-top:24px; border-top:1px solid var(--line); display:flex; align-items:center; gap:16px; }
 .contact-info-card .qr .box{ width:64px; height:64px; background: var(--cream); display:flex; align-items:center; justify-content:center; font-size:9px; color:var(--navy-900); text-align:center; padding:4px; }
 
-.form-card{ background: var(--white); padding: 48px 44px; border:1px solid var(--line-dark); }
+.form-card{ background: var(--white); padding: 48px 44px; border:1px solid var(--line-dark); border-radius:20px; }
 .field{ margin-bottom: 24px; }
 .field label{ display:block; font-size:12.5px; letter-spacing:.05em; margin-bottom:10px; color: var(--ink-soft); }
 .field label .req{ color:#c05a4b; margin-left:6px; font-size:11px; }
 .field input, .field select, .field textarea{
   width:100%;
   border: 1px solid var(--line-dark);
+  border-radius:12px;
   background: var(--paper);
   padding: 14px 16px;
   font-family: inherit;
@@ -812,7 +823,7 @@ p{ margin:0; }
 .news-list{ max-width: 820px; }
 .news-item{ display:grid; grid-template-columns:150px 1fr; gap:30px; padding:32px 0; border-top:1px solid var(--line-dark); }
 .news-item:last-child{ border-bottom:1px solid var(--line-dark); }
-.news-item .date{ font-size:12.5px; letter-spacing:.06em; color:var(--gold); font-family:"Noto Serif JP",serif; padding-top:2px; }
+.news-item .date{ font-size:12.5px; letter-spacing:.06em; color:var(--gold); font-family:"Zen Maru Gothic","Noto Serif JP",serif; padding-top:2px; }
 .news-item .tag{ display:inline-block; font-size:10.5px; letter-spacing:.06em; color:var(--teal); border:1px solid var(--teal-light); padding:3px 10px; margin-bottom:12px; }
 .news-item h4{ font-size:16.5px; letter-spacing:.02em; }
 .news-item p{ margin-top:10px; font-size:13.5px; color:var(--ink-soft); }
@@ -822,8 +833,8 @@ p{ margin:0; }
    Testimonial placeholder
    ========================================================================== */
 .testimonial-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
-.testimonial-card{ border:1px dashed rgba(20,26,40,0.18); background:var(--white); padding:38px 26px; text-align:center; color:var(--ink-soft); }
-.testimonial-card .icon{ font-family:"Noto Serif JP",serif; font-size:30px; color:var(--gold); margin-bottom:14px; line-height:1; }
+.testimonial-card{ border:1px dashed rgba(74,60,48,0.18); border-radius:16px; background:var(--white); padding:38px 26px; text-align:center; color:var(--ink-soft); }
+.testimonial-card .icon{ font-family:"Zen Maru Gothic","Noto Serif JP",serif; font-size:30px; color:var(--gold); margin-bottom:14px; line-height:1; }
 .testimonial-card p{ font-size:13px; line-height:1.9; }
 .testimonial-note{ margin-top:30px; text-align:center; font-size:13px; color:var(--ink-soft); }
 
@@ -839,6 +850,7 @@ p{ margin:0; }
 .result-card{
   background: var(--white);
   border:1px solid var(--line-dark);
+  border-radius:24px;
   padding: 30px 32px;
   position:relative;
   overflow:hidden;
@@ -853,7 +865,7 @@ p{ margin:0; }
 .result-card:hover::before{ opacity:1; }
 .result-card--featured{ grid-column: 1 / -1; }
 .result-label{
-  font-family:"Noto Serif JP",serif;
+  font-family:"Zen Maru Gothic","Noto Serif JP",serif;
   font-size:15.5px;
   letter-spacing:.03em;
   color: var(--ink);
@@ -900,7 +912,7 @@ p{ margin:0; }
   animation: marquee 26s linear infinite;
 }
 .marquee-track span{
-  font-family:"Noto Serif JP",serif;
+  font-family:"Zen Maru Gothic","Noto Serif JP",serif;
   font-size:14px;
   letter-spacing:.06em;
   color: var(--ink-soft);
@@ -923,7 +935,7 @@ p{ margin:0; }
   margin-bottom:16px; flex-wrap:wrap;
 }
 .reel-head h3{
-  font-family:"Noto Serif JP",serif;
+  font-family:"Zen Maru Gothic","Noto Serif JP",serif;
   font-size:15.5px;
   letter-spacing:.03em;
 }
@@ -991,7 +1003,7 @@ p{ margin:0; }
 .reel-media--photo{ aspect-ratio: 4/5; }
 .reel-caption{
   margin-top:10px;
-  font-family:"Noto Serif JP",serif;
+  font-family:"Zen Maru Gothic","Noto Serif JP",serif;
   font-size:12.5px;
   letter-spacing:.03em;
   color: var(--ink-soft);
@@ -1001,7 +1013,7 @@ p{ margin:0; }
 .voice-label{
   margin-top:32px;
   margin-bottom:14px;
-  font-family:"Noto Serif JP",serif;
+  font-family:"Zen Maru Gothic","Noto Serif JP",serif;
   font-size:15.5px;
   letter-spacing:.03em;
 }
@@ -1018,10 +1030,11 @@ p{ margin:0; }
   background: var(--white);
   border:1px solid var(--line-dark);
   border-left:3px solid var(--gold);
+  border-radius:16px;
   padding:22px 26px;
 }
 .voice-name{
-  font-family:"Noto Serif JP",serif;
+  font-family:"Zen Maru Gothic","Noto Serif JP",serif;
   font-size:14px;
   color: var(--ink);
   margin-bottom:10px;
@@ -1043,7 +1056,7 @@ p{ margin:0; }
 .achieve-list{ max-width: 820px; }
 .achieve-row{ display:grid; grid-template-columns:150px 1fr; gap:24px; padding:24px 0; border-top:1px solid var(--line-dark); align-items:baseline; }
 .achieve-row:last-child{ border-bottom:1px solid var(--line-dark); }
-.achieve-row .when{ font-size:12px; letter-spacing:.08em; color:var(--gold); font-family:"Noto Serif JP",serif; }
+.achieve-row .when{ font-size:12px; letter-spacing:.08em; color:var(--gold); font-family:"Zen Maru Gothic","Noto Serif JP",serif; }
 .achieve-row .what{ font-size:15.5px; }
 .achieve-row .what small{ display:block; margin-top:6px; font-size:12.5px; color:var(--ink-soft); }
 
@@ -1052,7 +1065,7 @@ p{ margin:0; }
    ========================================================================== */
 .site-footer{
   background: var(--navy-950);
-  color: rgba(246,242,232,0.65);
+  color: rgba(247,241,227,0.65);
   padding: 80px 0 30px;
 }
 .footer-top{
@@ -1064,7 +1077,7 @@ p{ margin:0; }
 }
 .footer-brand{ display:flex; align-items:center; gap:12px; margin-bottom: 20px; }
 .footer-brand img{ height:34px; }
-.footer-brand span{ font-family:"Noto Serif JP",serif; font-size:19px; color: var(--cream); }
+.footer-brand span{ font-family:"Zen Maru Gothic","Noto Serif JP",serif; font-size:19px; color: var(--cream); }
 .footer-desc{ font-size:13px; line-height:1.9; max-width: 280px; }
 .footer-col h5{ font-size:12px; letter-spacing:.1em; color: var(--gold-light); margin-bottom:20px; }
 .footer-col li{ margin-bottom: 13px; font-size:13.5px; }
@@ -1125,7 +1138,7 @@ p{ margin:0; }
   transition: transform .5s var(--ease);
 }
 .mobile-nav.open{ transform: translateY(0); }
-.mobile-nav a{ font-family:"Noto Serif JP",serif; font-size:24px; color: var(--cream); }
+.mobile-nav a{ font-family:"Zen Maru Gothic","Noto Serif JP",serif; font-size:24px; color: var(--cream); }
 .mobile-nav a.active{ color: var(--gold-light); }
 .mobile-nav-sub{
   display:flex; flex-direction:column; align-items:center;
@@ -1133,7 +1146,7 @@ p{ margin:0; }
 }
 .mobile-nav-sub a{
   font-family:"Noto Sans JP",sans-serif; font-size:14.5px;
-  color: rgba(246,242,232,0.65); letter-spacing:.03em;
+  color: rgba(247,241,227,0.65); letter-spacing:.03em;
 }
 .mobile-nav-sub a:hover, .mobile-nav-sub a:active{ color: var(--gold-light); }
 
@@ -1154,10 +1167,10 @@ p{ margin:0; }
         <a href="#" data-target="business">事業内容</a>
         <span class="nav-caret" aria-hidden="true"><svg viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         <div class="nav-dropdown">
-          <a href="#" data-target="business" data-anchor="01">パーソナルトレーニング</a>
-          <a href="#" data-target="business" data-anchor="02">オンライン×ウェルネス</a>
-          <a href="#" data-target="business" data-anchor="03">人材・組織開発</a>
-          <a href="#" data-target="business" data-anchor="04">野球教室・イベント</a>
+          <a href="#" data-target="business" data-anchor="01">高齢者デイ×ジム</a>
+          <a href="#" data-target="business" data-anchor="02">パーソナルトレーニング</a>
+          <a href="#" data-target="business" data-anchor="03">オンラインウェルネス（個別）</a>
+          <a href="#" data-target="business" data-anchor="04">オンラインフィットネス（受け放題）</a>
         </div>
       </div>
       <a href="#" data-target="home" data-anchor="testimonials">実績</a>
@@ -1177,10 +1190,10 @@ p{ margin:0; }
   <a href="#" data-target="home" data-anchor="philosophy" data-spy="philosophy">理念</a>
   <a href="#" data-target="business">事業内容</a>
   <div class="mobile-nav-sub">
-    <a href="#" data-target="business" data-anchor="01">パーソナルトレーニング</a>
-    <a href="#" data-target="business" data-anchor="02">オンライン×ウェルネス</a>
-    <a href="#" data-target="business" data-anchor="03">人材・組織開発</a>
-    <a href="#" data-target="business" data-anchor="04">野球教室・イベント</a>
+    <a href="#" data-target="business" data-anchor="01">高齢者デイ×ジム</a>
+    <a href="#" data-target="business" data-anchor="02">パーソナルトレーニング</a>
+    <a href="#" data-target="business" data-anchor="03">オンラインウェルネス（個別）</a>
+    <a href="#" data-target="business" data-anchor="04">オンラインフィットネス（受け放題）</a>
   </div>
   <a href="#" data-target="home" data-anchor="testimonials">実績</a>
   <a href="#" data-target="about">代表紹介</a>
@@ -1201,7 +1214,7 @@ p{ margin:0; }
         人生を<em>豊かに</em>。
       </h1>
       <p class="sub reveal reveal-d2">
-        15年間のアスリート人生と、大怪我による挫折。そこから独立し、パーソナルトレーニング、オンラインウェルネス、人材・組織開発、野球教室の4つの事業を展開。スポーツや今までの人生で培った&#8220;パフォーマンスを引き出す力&#8221;を、経営者・ビジネスパーソン・挑戦するすべての人へ届けています。
+        15年間のアスリート人生と、大怪我による挫折。そこから独立し、高齢者デイ×ジム、パーソナルトレーニング、オンラインウェルネス、オンラインフィットネスの4つの事業を展開。フィットネスを通じて人生が豊かになる実感を、経営者・ビジネスパーソンからご高齢の方まで、すべての人へ届けています。
       </p>
       <div class="hero-actions reveal reveal-d3">
         <a href="#" data-target="business" class="btn btn-gold">事業内容を見る <span class="btn-arrow">&rarr;</span></a>
@@ -1209,7 +1222,7 @@ p{ margin:0; }
       </div>
       <div class="hero-stats reveal reveal-d4">
         <div><b>15年</b><span>アスリートとしての競技経験</span></div>
-        <div><b>4事業</b><span>トレーニング・ウェルネス・人材開発</span></div>
+        <div><b>4事業</b><span>デイ×ジム・トレーニング・ウェルネス</span></div>
         <div><b>元甲子園球児</b><span>全国大会・明治神宮大会優勝、一部リーグベストナイン</span></div>
       </div>
     </div>
@@ -1220,8 +1233,8 @@ p{ margin:0; }
   <div class="container">
     <div class="eyebrow reveal">Mission</div>
     <h2 class="reveal reveal-d1">
-      人の<span class="mark">可能性</span>やパフォーマンスを<br>
-      最大化することを通じて、<br>
+      人の<span class="mark">可能性</span>や本来の力を<br>
+      引き出すことを通じて、<br>
       共に<span class="mark2">喜び</span>や<span class="mark2">幸せ</span>を分かち合える世界をつくる。
     </h2>
   </div>
@@ -1231,12 +1244,12 @@ p{ margin:0; }
     <div class="dots reveal">- - - - -</div>
     <h2 class="reveal reveal-d1">
       野球漬けの人生から起業へ。<br>
-      <span class="accent">&#8220;パフォーマンスの最大化&#8221;</span>を、すべての人へ。
+      そして今、<span class="accent">&#8220;フィットネスで人生を豊かに&#8221;</span>をすべての人へ。
     </h2>
     <p class="body reveal reveal-d2">
-      15年間アスリートとして競技生活を送り、甲子園や全国大会優勝、個人タイトル獲得を経験するも、大怪我で野球と就職の道を断たれ、大学卒業後は一般企業に就職。そこから独立し現在はパーソナルトレーニングやオンラインでのトレーニング・ウェルネス支援、人材・組織開発など4つの事業を展開しています。スポーツや自己の経験から培った&#8220;パフォーマンスを引き出す力&#8221;を、経営者やビジネスパーソン、これから何かに挑戦する人たちに届けています。
+      15年間アスリートとして競技生活を送り、甲子園や全国大会優勝、個人タイトル獲得を経験するも、大怪我で野球と就職の道を断たれ、大学卒業後は一般企業に就職。そこから独立し、現在は事業主向けのパーソナルトレーニングやオンラインウェルネス支援、そして高齢者デイ×ジム、オンラインフィットネスの4つの事業を展開しています。年代を問わず、フィットネスを通じて人生が豊かになる実感を、ひとりでも多くの方に届けたいと思っています。
     </p>
-    <p class="credit reveal reveal-d3">CoreSeed — Performance &amp; Wellness for People and Organizations</p>
+    <p class="credit reveal reveal-d3">CoreSeed — Fitness for a Richer Life, Every Generation</p>
   </div>
 </section>
 <section class="section on-paper">
@@ -1270,37 +1283,37 @@ p{ margin:0; }
   <div class="container">
     <div class="section-head reveal">
       <div class="eyebrow">Business</div>
-      <h2>4つの事業で、個人と組織のパフォーマンスに伴走する。</h2>
-      <p class="lead">経営者・ビジネスパーソンから、スポーツチーム・学生まで。それぞれの目的に合わせた4つの事業を展開しています。</p>
+      <h2>4つの事業で、フィットネスを通じて人生に伴走する。</h2>
+      <p class="lead">経営者・ビジネスパーソンから、ご高齢の方まで。年代やライフスタイルに合わせた4つの事業を展開しています。</p>
     </div>
     <div class="biz-grid">
       <div class="biz-card reveal">
         <span class="bar"></span>
         <div class="num">01</div>
-        <h3>パーソナルトレーニング事業</h3>
-        <p>経営者・個人事業主に特化し、専属で身体づくりとコンディショニングを支援。多忙な生活リズムに合わせたプログラムを設計します。</p>
-        <div class="target"><b>対象</b>経営者、個人事業主、フリーランス</div>
+        <h3>高齢者デイ×ジム事業</h3>
+        <p>昼は高齢者デイサービス、夜は一般向けジムとして稼働する一体型施設。マシントレーニング×機能訓練で、&#8220;自分の足で立ち、歩ける&#8221;身体づくりをサポートします。</p>
+        <div class="target"><b>対象</b>ご高齢の方（デイ）、どなたでも（夜間ジム）・2027年春 OPEN予定</div>
       </div>
       <div class="biz-card reveal reveal-d1">
         <span class="bar"></span>
         <div class="num">02</div>
-        <h3>オンライントレーニング×ウェルネス事業</h3>
-        <p>運動だけでなく睡眠・食事・メンタルを含めたウェルネス全体に伴走。場所を問わず取り組めるオンライン形式です。</p>
-        <div class="target"><b>対象</b>全国どこからでも。法人様の福利厚生にも</div>
+        <h3>パーソナルトレーニング事業（事業主向け）</h3>
+        <p>経営者・個人事業主に特化し、専属で身体づくりとコンディショニングを支援。多忙な生活リズムに合わせたプログラムを設計します。</p>
+        <div class="target"><b>対象</b>経営者、個人事業主</div>
       </div>
       <div class="biz-card reveal reveal-d2">
         <span class="bar"></span>
         <div class="num">03</div>
-        <h3>人材開発・組織開発事業</h3>
-        <p>スポーツコーチングの手法を用い、「個の力を組織の力に変える」視点で、個人と組織のパフォーマンスを引き出します。</p>
-        <div class="target"><b>対象</b>スポーツマン、チーム、部活動、指導者、保護者</div>
+        <h3>オンラインウェルネス事業（個別）</h3>
+        <p>運動だけでなく睡眠・食事・メンタルを含めたウェルネス全体に、おひとりずつ個別に伴走。場所を問わず取り組めるオンライン形式です。</p>
+        <div class="target"><b>対象</b>全国どこからでも（個人向け）</div>
       </div>
       <div class="biz-card reveal reveal-d3">
         <span class="bar"></span>
         <div class="num">04</div>
-        <h3>野球教室・トークショーイベント事業</h3>
-        <p>準備中...</p>
-        <div class="target"><b>対象</b>学生野球チーム、学校、地域の野球イベント</div>
+        <h3>オンラインフィットネス事業（受け放題）</h3>
+        <p>トレーニング・ヨガ・マットピラティス・栄養指導の4部門が、月額制で受け放題。好きな時間・好きな部門で参加できるオンラインサブスクです。</p>
+        <div class="target"><b>対象</b>全国どこからでも・近日公開</div>
       </div>
     </div>
     <div style="text-align:center; margin-top:56px;" class="reveal">
@@ -1360,7 +1373,7 @@ p{ margin:0; }
         </div>
       </div>
       <div class="result-card reveal reveal-d1 result-card--featured">
-        <div class="result-label">オンライン×ウェルネス</div>
+        <div class="result-label">オンラインウェルネス（個別）</div>
         <div class="tag-row">
           <span class="result-tag">全国対応</span>
         </div>
@@ -1408,26 +1421,12 @@ p{ margin:0; }
           </div>
         </div>
       </div>
-      <div class="result-card reveal reveal-d2">
-        <div class="result-label">人材・組織開発</div>
-        <div class="tag-row">
-          <span class="result-tag">札幌藻岩高校さん</span>
-          <span class="result-tag">鉄東すずかけファイターズさん</span>
-          <span class="result-tag">その他...</span>
-        </div>
-      </div>
-      <div class="result-card reveal reveal-d3">
-        <div class="result-label">野球教室・イベント</div>
-        <div class="tag-row">
-          <span class="result-tag">準備中...</span>
-        </div>
-      </div>
     </div>
 
     <div class="results-marquee reveal reveal-d3" aria-hidden="true">
       <div class="marquee-track">
-        <span>パーソナルトレーニング</span><span>オンライン&times;ウェルネス</span><span>人材・組織開発</span><span>野球教室・イベント</span><span>経営者</span><span>個人事業主</span><span>スポーツチーム</span><span>学生野球</span>
-        <span>パーソナルトレーニング</span><span>オンライン&times;ウェルネス</span><span>人材・組織開発</span><span>野球教室・イベント</span><span>経営者</span><span>個人事業主</span><span>スポーツチーム</span><span>学生野球</span>
+        <span>高齢者デイ&times;ジム</span><span>パーソナルトレーニング</span><span>オンラインウェルネス</span><span>オンラインフィットネス</span><span>経営者</span><span>個人事業主</span><span>ご高齢の方</span><span>全国対応</span>
+        <span>高齢者デイ&times;ジム</span><span>パーソナルトレーニング</span><span>オンラインウェルネス</span><span>オンラインフィットネス</span><span>経営者</span><span>個人事業主</span><span>ご高齢の方</span><span>全国対応</span>
       </div>
     </div>
   </div>
@@ -1453,7 +1452,7 @@ p{ margin:0; }
       <div class="info-row"><dt>屋号</dt><dd>CoreSeed（コアシード）</dd></div>
       <div class="info-row"><dt>代表者</dt><dd>田口 恭大（たぐち きょうた）</dd></div>
       <div class="info-row"><dt>事業形態</dt><dd>個人事業主<small>※事業拡大に伴い、法人化を準備しています</small></dd></div>
-      <div class="info-row"><dt>事業内容</dt><dd>パーソナルトレーニング事業／オンライントレーニング×ウェルネス事業／人材開発・組織開発事業／野球教室・トークショーイベント事業</dd></div>
+      <div class="info-row"><dt>事業内容</dt><dd>高齢者デイ×ジム事業／パーソナルトレーニング事業（事業主向け）／オンラインウェルネス事業（個別）／オンラインフィットネス事業（受け放題）</dd></div>
       <div class="info-row"><dt>対応形式</dt><dd>対面（訪問・提携施設）／オンライン</dd></div>
       <div class="info-row"><dt>メール</dt><dd><a href="mailto:k.taguchi5589@gmail.com" style="color:var(--teal); text-decoration:underline;">k.taguchi5589@gmail.com</a></dd></div>
       <div class="info-row"><dt>電話番号</dt><dd><a href="tel:09097672231" style="color:var(--teal); text-decoration:underline;">090-9767-2231</a></dd></div>
@@ -1502,7 +1501,7 @@ p{ margin:0; }
     <div class="eyebrow reveal reveal-d1">Business</div>
     <h1 class="reveal reveal-d2">事業内容</h1>
     <p class="sub reveal reveal-d3">
-      経営者・ビジネスパーソン向けのパーソナルトレーニングから、全国対応のオンラインウェルネス、スポーツ現場での人材・組織開発、そして次世代への還元となる野球教室まで。CoreSeedは4つの事業を通じて、個人と組織のパフォーマンスに伴走します。
+      高齢者デイ×ジムから、経営者・ビジネスパーソン向けのパーソナルトレーニング、全国対応のオンラインウェルネス、オンラインフィットネスまで。CoreSeedは4つの事業を通じて、年代を問わずすべての人の&#8220;フィットネスで人生を豊かに&#8221;を支えます。
     </p>
   </div>
 </section>
@@ -1513,15 +1512,17 @@ p{ margin:0; }
     <div class="biz-detail reveal" id="01">
       <div class="num-col">
         <div class="num">01</div>
-        <span class="tag">Personal Training</span>
+        <span class="tag">Day Care &times; Gym</span>
+        <span class="tag" style="margin-left:8px;">準備中</span>
       </div>
       <div>
-        <h3>パーソナルトレーニング事業（事業主向け）</h3>
-        <p class="desc">経営者・個人事業主に特化し、専属で身体づくりとコンディショニングを支援します。事業主特有の不規則なスケジュールや生活習慣、多忙な生活リズムに合わせて、無理なく続けられるプログラムを設計。心身のコンディションを整えることは、経営判断のパフォーマンスにも直結します。</p>
+        <h3>高齢者デイ×ジム事業</h3>
+        <p class="desc">昼は高齢者デイサービス、夜は一般向けジムとして稼働する一体型の施設です。ジム型のマシントレーニングと機能訓練を組み合わせ、&#8220;自分の足で立てる・好きな場所へ自分の足で行ける&#8221;身体づくりをサポート。デイサービスをご利用いただいた方が、卒業後も夜間ジムでの自費パーソナルトレーニングへ継続して通える仕組みを整えています。</p>
         <div class="meta">
-          <div><b>対象</b><span>経営者、個人事業主、フリーランス</span></div>
-          <div><b>形式</b><span>対面（訪問・提携ジム）／オンライン対応可</span></div>
-          <div><b>内容</b><span>身体づくり、コンディショニング、生活習慣の伴走</span></div>
+          <div><b>対象</b><span>ご高齢の方（デイサービス）、どなたでも（夜間ジム）</span></div>
+          <div><b>形式</b><span>半日型デイサービス（午前・午後の2部制）／平日夜間・土曜午後・日曜はジムとして一般開放</span></div>
+          <div><b>内容</b><span>機能訓練、マシントレーニング、生活動作につながる身体づくり</span></div>
+          <div><b>開設</b><span>2027年春、札幌市内にOPEN予定</span></div>
         </div>
       </div>
     </div>
@@ -1529,15 +1530,15 @@ p{ margin:0; }
     <div class="biz-detail reveal" id="02">
       <div class="num-col">
         <div class="num">02</div>
-        <span class="tag">Online Wellness</span>
+        <span class="tag">Personal Training</span>
       </div>
       <div>
-        <h3>オンライントレーニング × ウェルネス事業</h3>
-        <p class="desc">心身のコンディションを整え、日常や仕事のパフォーマンスを向上させ、病気や怪我の予防にもつなげます。場所を問わず取り組めるオンライン形式で、運動だけでなく睡眠・食事・メンタルを含めたウェルネス全体に伴走。全国どこからでも参加でき、法人様の福利厚生としてもご活用いただけます。</p>
+        <h3>パーソナルトレーニング事業（事業主向け）</h3>
+        <p class="desc">経営者・個人事業主に特化し、専属で身体づくりとコンディショニングを支援します。事業主特有の不規則なスケジュールや生活習慣、多忙な生活リズムに合わせて、無理なく続けられるプログラムを設計。心身のコンディションを整えることは、経営判断の質にも直結します。</p>
         <div class="meta">
-          <div><b>対象</b><span>全国どこからでも参加可能。法人様の福利厚生にも</span></div>
-          <div><b>形式</b><span>オンライン（個人・法人）</span></div>
-          <div><b>内容</b><span>運動・睡眠・食事・メンタルを含むウェルネス支援</span></div>
+          <div><b>対象</b><span>経営者、個人事業主</span></div>
+          <div><b>形式</b><span>対面（訪問・提携ジム）／オンライン対応可</span></div>
+          <div><b>内容</b><span>身体づくり、コンディショニング、生活習慣の伴走</span></div>
         </div>
       </div>
     </div>
@@ -1545,15 +1546,15 @@ p{ margin:0; }
     <div class="biz-detail reveal" id="03">
       <div class="num-col">
         <div class="num">03</div>
-        <span class="tag">Coaching</span>
+        <span class="tag">Online Wellness</span>
       </div>
       <div>
-        <h3>人材開発・組織開発事業</h3>
-        <p class="desc">スポーツコーチングの手法を用い、個人と組織のパフォーマンスを引き出します。チームスポーツで培った「個の力を組織の力に変える」という視点を、スポーツチームの人材育成や組織開発へ応用。指導者・保護者を含めたチーム全体の成長を支援します。</p>
+        <h3>オンラインウェルネス事業（個別）</h3>
+        <p class="desc">心身のコンディションを整え、日常や仕事の質を高め、病気や怪我の予防にもつなげます。場所を問わず取り組めるオンライン形式で、運動だけでなく睡眠・食事・メンタルを含めたウェルネス全体に、おひとりずつ個別に伴走。全国どこからでもご参加いただけます。</p>
         <div class="meta">
-          <div><b>対象</b><span>スポーツマン、スポーツチーム、部活動、指導者、保護者</span></div>
-          <div><b>形式</b><span>チーム単位でのコーチング・研修</span></div>
-          <div><b>内容</b><span>スポーツコーチング手法を用いた組織開発</span></div>
+          <div><b>対象</b><span>全国どこからでも（個人向け）</span></div>
+          <div><b>形式</b><span>オンライン（個別伴走）</span></div>
+          <div><b>内容</b><span>運動・睡眠・食事・メンタルを含むウェルネス支援</span></div>
         </div>
       </div>
     </div>
@@ -1561,15 +1562,16 @@ p{ margin:0; }
     <div class="biz-detail reveal" id="04">
       <div class="num-col">
         <div class="num">04</div>
-        <span class="tag">Baseball Event</span>
+        <span class="tag">Online Fitness</span>
+        <span class="tag" style="margin-left:8px;">近日公開</span>
       </div>
       <div>
-        <h3>野球教室・トークショーイベント事業</h3>
-        <p class="desc">元甲子園球児としての経験をもとに、次世代への還元と野球の魅力を伝える場を提供します。元プロの選手を講師としてお呼びし、技術指導だけでなく、挑戦し続けるマインドの伝承を行っています。</p>
+        <h3>オンラインフィットネス事業（受け放題）</h3>
+        <p class="desc">トレーニング・ヨガ・マットピラティス・栄養指導の4部門が、月額制で受け放題になるオンラインフィットネスサービスです。毎時定刻スタートのレッスンに、好きな時間・好きな部門で自由にご参加いただけます。運動習慣づくりから栄養面のサポートまで、ひとつのサブスクで幅広くカバーします。</p>
         <div class="meta">
-          <div><b>対象</b><span>学生野球チーム、学校、地域の野球イベント</span></div>
-          <div><b>形式</b><span>野球教室、トークショー、講演</span></div>
-          <div><b>内容</b><span>技術指導、マインドセット、キャリアトーク</span></div>
+          <div><b>対象</b><span>全国どこからでも</span></div>
+          <div><b>形式</b><span>オンライン・グループレッスン（月額制サブスク）</span></div>
+          <div><b>内容</b><span>トレーニング／ヨガ／マットピラティス／栄養指導（4部門受け放題）</span></div>
         </div>
       </div>
     </div>
@@ -1584,7 +1586,7 @@ p{ margin:0; }
       表面的な技術指導ではなく、<br>その人・その組織が本来抱える課題に向き合う。
     </h2>
     <p class="reveal reveal-d2" style="max-width:640px; margin:24px auto 0; font-size:14.5px; color:var(--ink-soft);">
-      どの事業も、根底にあるのは「本質を見極める」という姿勢です。まずはヒアリングのみのご相談からでも構いません。あなたやあなたの組織に合わせたプランをご提案します。
+      どの事業も、根底にあるのは「本質を見極める」という姿勢です。まずはヒアリングのみのご相談からでも構いません。あなたに合わせたプランをご提案します。
     </p>
     <a href="#" data-target="contact" class="btn btn-outline-dark reveal reveal-d3" style="margin-top:34px;">お問い合わせはこちら <span class="btn-arrow">&rarr;</span></a>
   </div>
@@ -1600,7 +1602,7 @@ p{ margin:0; }
     <div class="eyebrow reveal reveal-d1">Representative</div>
     <h1 class="reveal reveal-d2">代表紹介</h1>
     <p class="sub reveal reveal-d3">
-      元甲子園球児という原点から、“パフォーマンスの最大化”を軸に事業を展開。CoreSeed代表・田口恭大のプロフィールと、15年間のアスリート人生で積み重ねてきた競技実績をご紹介します。
+      元甲子園球児という原点から、“フィットネスで人生を豊かに”を軸に事業を展開。CoreSeed代表・田口恭大のプロフィールと、15年間のアスリート人生で積み重ねてきた競技実績をご紹介します。
     </p>
   </div>
 </section>
@@ -1608,11 +1610,11 @@ p{ margin:0; }
 <section class="section on-paper">
   <div class="container about-grid">
     <div class="about-text reveal reveal-d1">
-      <h2 class="about-headline serif">可能性を引き出し、<br>パフォーマンスに変える。</h2>
+      <h2 class="about-headline serif">可能性を引き出し、<br>人生を豊かにする。</h2>
       <p class="about-journey">明治神宮大会優勝 &rarr; 甲子園出場</p>
       <p class="about-body">白球を追いかけていた学生時代、勝つこともちろん、自分自身と向き合うことの大切さを知りました。明治神宮大会での優勝、ベストナインという結果も、技術だけでなく心と身体を整えることの積み重ねの先にあったと感じています。</p>
       <div class="about-pullquote">
-        <p>人はそれぞれ、自分でも気づいていない可能性を持っています。その可能性を引き出し、パフォーマンスという形にすること——それが私の役目だと思っています。</p>
+        <p>人はそれぞれ、自分でも気づいていない可能性を持っています。その可能性を引き出し、その人らしい“豊かさ”という形にすること——それが私の役目だと思っています。</p>
       </div>
       <p class="about-body">卒業後は一般企業に就職しましたが、この学びをより多くの人に届けたいという想いから独立を決意。今はより多くの人、これから何か挑戦する人たちに向けて、今までで培った情報、技術、知見などを届けています。</p>
       <div class="tag-row" style="margin-top:28px;">
@@ -1669,7 +1671,7 @@ p{ margin:0; }
     <div class="eyebrow reveal reveal-d1">Contact</div>
     <h1 class="reveal reveal-d2">お問い合わせ</h1>
     <p class="sub reveal reveal-d3">
-      トレーニング・コーチングに関するご相談、法人でのご依頼、講演・イベントのご依頼など、お気軽にご連絡ください。「何から相談すればいいか分からない」という段階でも大丈夫です。ヒアリングのみのご相談も歓迎しています。
+      トレーニングやデイサービスに関するご相談、オンラインサービスのお申し込みなど、お気軽にご連絡ください。「何から相談すればいいか分からない」という段階でも大丈夫です。ヒアリングのみのご相談も歓迎しています。
     </p>
   </div>
 </section>
@@ -1681,7 +1683,7 @@ p{ margin:0; }
       <div class="reveal">
         <div class="contact-info-card">
           <h3>CoreSeed</h3>
-          <p style="margin-top:10px; font-size:12.5px; color:rgba(246,242,232,0.6); letter-spacing:.04em;">代表　田口 恭大</p>
+          <p style="margin-top:10px; font-size:12.5px; color:rgba(247,241,227,0.6); letter-spacing:.04em;">代表　田口 恭大</p>
 
           <div class="row">
             <div class="ico">MAIL</div>
@@ -1703,8 +1705,8 @@ p{ margin:0; }
           </div>
           <div class="row">
             <div class="ico">対象</div>
-            <div class="val">個人・法人
-              <small>経営者、ビジネスパーソン、スポーツチームなど</small>
+            <div class="val">個人・ご家族
+              <small>経営者、ビジネスパーソン、ご高齢の方のご家族など</small>
             </div>
           </div>
         </div>
@@ -1747,10 +1749,10 @@ p{ margin:0; }
               <label>お問い合わせ内容<span class="req">必須</span></label>
               <select name="category" required>
                 <option value="">選択してください</option>
+                <option>高齢者デイ×ジムについて</option>
                 <option>パーソナルトレーニングについて</option>
-                <option>オンライントレーニング×ウェルネスについて</option>
-                <option>人材開発・組織開発について</option>
-                <option>野球教室・トークショーイベントについて</option>
+                <option>オンラインウェルネス（個別）について</option>
+                <option>オンラインフィットネス（受け放題）について</option>
                 <option>その他のご相談</option>
               </select>
             </div>
@@ -1775,7 +1777,7 @@ p{ margin:0; }
   <div class="container inner reveal">
     <div class="eyebrow" style="justify-content:center;">Contact</div>
     <h2 style="margin-top:18px;">お気軽にご連絡ください。</h2>
-    <p>まずはヒアリングのみのご相談も歓迎しています。あなたの、あなたの組織の可能性を引き出す一歩を。</p>
+    <p>まずはヒアリングのみのご相談も歓迎しています。あなたらしい毎日を引き出す一歩を。</p>
     <div class="actions">
       <a href="#" data-target="contact" class="btn btn-gold">お問い合わせフォームへ <span class="btn-arrow">&rarr;</span></a>
       <a href="mailto:k.taguchi5589@gmail.com" class="btn btn-outline">メールで問い合わせる</a>
@@ -1789,7 +1791,7 @@ p{ margin:0; }
         <a href="#" data-target="home" class="footer-brand">
           <span>CoreSeed</span>
         </a>
-        <p class="footer-desc">人の可能性やパフォーマンスを最大化することを通じて、共に喜びや幸せを分かち合える世界をつくる。</p>
+        <p class="footer-desc">人の可能性や本来の力を引き出すことを通じて、共に喜びや幸せを分かち合える世界をつくる。</p>
       </div>
       <div class="footer-col">
         <h5>MENU</h5>
@@ -1806,10 +1808,10 @@ p{ margin:0; }
       <div class="footer-col">
         <h5>BUSINESS</h5>
         <ul>
-          <li><a href="#" data-target="business" data-anchor="01">パーソナルトレーニング</a></li>
-          <li><a href="#" data-target="business" data-anchor="02">オンライン×ウェルネス</a></li>
-          <li><a href="#" data-target="business" data-anchor="03">人材・組織開発</a></li>
-          <li><a href="#" data-target="business" data-anchor="04">野球教室・イベント</a></li>
+          <li><a href="#" data-target="business" data-anchor="01">高齢者デイ×ジム</a></li>
+          <li><a href="#" data-target="business" data-anchor="02">パーソナルトレーニング</a></li>
+          <li><a href="#" data-target="business" data-anchor="03">オンラインウェルネス（個別）</a></li>
+          <li><a href="#" data-target="business" data-anchor="04">オンラインフィットネス（受け放題）</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -1824,7 +1826,7 @@ p{ margin:0; }
     </div>
     <div class="footer-bottom">
       <span>&copy; <span data-year>2026</span> CoreSeed. All Rights Reserved.</span>
-      <span>Performance &amp; Wellness for People and Organizations</span>
+      <span>Fitness for a Richer Life, Every Generation</span>
     </div>
   </div>
 </footer>
